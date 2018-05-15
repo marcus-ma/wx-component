@@ -1,5 +1,5 @@
 # wx-component （拿来即用的常用微信开发组件库）
-
+Business Function components of out of the box for WeChat Platform development
 #使用说明
 --
 该组件库意在提供一些已封装好的常用微信H5、公众号等开发业务逻辑的功能，开发者可以根据实际业务场景导入相关的业务组件，减少理解成本，降低开发难度，拿来即用。
@@ -162,13 +162,13 @@ class demo
     private $appId = '';
     private $appSecret = '';
     private $accessTokenFile = 'xxx.json';
-    
+
     //定义要处理的消息业务类型,配置项从以下选
     //现暂时只提供“关注事件”和“关键词回复事件"
     /**
      * @var array
      *
-     *       
+     *
             （事件类型：关注事件）'event' => 'receiveEvent',
             （文本类型：关键字回复）'text' => 'receiveText',
             （位置类型：调用LBS地理信息）'location' => 'receiveLocation',
@@ -186,7 +186,7 @@ class demo
         //例如关注后将该用户的openid记录在数据库
     }
 
-    
+
     public function wxInitForSubscribe()
     {
         //_setSubscribe为设置用户关注公众号后收到的信息
@@ -213,10 +213,10 @@ class demo
         //创建菜单 页面显示true则菜单创建成功
         $postmenu='{
                     "button":[
-                     {    
+                     {
                           "name":"关于我们",
                           "sub_button":[
-                           {    
+                           {
                                "type":"view",
                                "name":"官网地址",
                                "url":"http://www.lambdass.com"
@@ -235,7 +235,7 @@ class demo
                       {
                            "name":"成功项目",
                            "sub_button":[
-                           {    
+                           {
                                "type":"view",
                                "name":"原本佛山",
                                "url":"http://www.ybfoshan.com/"
@@ -271,7 +271,7 @@ class demo
 
 ### 4.wxjs（调用微信分享功能）
 
-```html
+``````html
 <script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script>
 const vConfig = {
