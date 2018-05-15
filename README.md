@@ -268,3 +268,37 @@ class demo
 }
 
 ```
+
+### 4.wxjs（调用微信分享功能）
+
+``````html
+<script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+const vConfig = {
+    debug:true,
+    appId:'',
+    timestamp:'',
+    nonceStr:'',
+    signature:'',
+    jsApiList:[
+        'onMenuShareTimeline', //分享到朋友圈
+        'onMenuShareAppMessage', //分享给朋友
+        'onMenuShareQQ' //分享到QQ
+    ]
+};
+
+const sConfig = {
+    title:'',
+    link:'',
+    imgUrl:'',
+    desc:'',
+    success:function () {
+        alert('分享成功');
+    },
+    cancel: function () {
+        alert('分享失败');
+    }
+};
+</script>
+<script src="wxjs.js"></script>
+```
