@@ -1,5 +1,5 @@
 # wx-component （拿来即用的常用微信开发组件库）
-Business Function components of out of the box for WeChat Platform development
+
 #使用说明
 --
 该组件库意在提供一些已封装好的常用微信H5、公众号等开发业务逻辑的功能，开发者可以根据实际业务场景导入相关的业务组件，减少理解成本，降低开发难度，拿来即用。
@@ -271,7 +271,7 @@ class demo
 
 ### 4.wxjs（调用微信分享功能）
 
-``````html
+```html
 <script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script>
 const vConfig = {
