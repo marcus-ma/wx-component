@@ -271,7 +271,7 @@ class demo
 
 ### 4.wxjs（调用微信分享功能）
 
-``````html
+```html
 <script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script>
 const vConfig = {
