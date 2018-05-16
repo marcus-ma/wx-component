@@ -197,8 +197,8 @@ class demo
 
     public function wxInitForKeyWord()
     {
-        //_setSubscribe为设置用户关注公众号后收到的信息
-        $this->_setSubscribe([
+        //_setKeywords为设置关键词回复
+        $this->_setKeywords([
             'hello'=>"hello world! thanks your subscribe",
             "openid" => "您的openid是:",
         ])
