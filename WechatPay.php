@@ -15,7 +15,7 @@ trait WechatPay
         'total_fee' => "金额,单位为分",
         'spbill_create_ip' => "用户的客户端IP,支持IPV4和IPV6两种格式的IP地址",
         'notify_url' => "回调地址",
-        'trade_type' => "支付类型：【MWEB:h5外链支付】，【】",
+        'trade_type' => "支付类型：【MWEB:h5外链支付】，【NATIVE:给用户扫码支付】",
         'scene_info'=>"场景信息"
     ];
 
@@ -60,6 +60,7 @@ trait WechatPay
 
 
         //如果是h5支付的话，只要获取对象的mweb_url属性
+        //如果是扫码支付的话，只要获取对象的code_url属性,最好是将该url信息生成二维码让用户扫
         return $this->https_request(self::$payEndPoint,$xml->asXML());
         //<xml>
         //   <return_code><![CDATA[SUCCESS]]></return_code>
